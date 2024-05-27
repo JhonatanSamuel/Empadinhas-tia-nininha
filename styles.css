@@ -308,12 +308,7 @@ section {
 }
 
 @media screen and (max-width: 540px) {
-    
-    .header img {
-        margin-left: 18rem;
-    
-       
-    }
+
    
     .navbar {
         display: none;

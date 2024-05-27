@@ -24,7 +24,7 @@ body {
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .header {
@@ -38,20 +38,20 @@ section {
 }
 
 .header img {
-    height: 50px;
+    height: 80px;
 }
 
 .header section {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
 .navbar a {
-    margin: 0 1rem;
-    font-size: 1.8rem;
+    margin: 0 2.5rem;
+    font-size: 2rem;
     color: #000000;
 }
 

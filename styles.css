@@ -205,6 +205,7 @@ section {
 
 .menu .box-container .box:hover {
     background-color: var(--black);
+    border: 1px solid #fff;
 }
 
 .menu .box-container .box:hover>* {
@@ -257,7 +258,9 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
+
 
 .contacts {
     text-align: center;

@@ -38,7 +38,7 @@ section {
 }
 
 .header img {
-    height: 80px;
+    height: 35px;
 }
 
 .header section {
@@ -97,11 +97,11 @@ section {
 .home-container section {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
 .content {
-    max-width: 60rem;
+    max-width: 100rem;
 }
 
 .content h3 {
@@ -136,6 +136,8 @@ section {
     background-color: var(--black);
     gap: 1.5rem;
     border-radius: 8px;
+    padding: 2rem;
+
 }
 
 .about img {

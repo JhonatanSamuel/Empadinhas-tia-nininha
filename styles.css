@@ -269,14 +269,14 @@ section {
 }
 
 .contacts .share {
-    padding: 6rem 0;
+    padding: 1rem 0;
     background-color: var(--black);
     border-radius: 8px;
     
 }
 
 .contacts img {
-    height: 130px;
+    height: 90px;
 }
 
 .contacts img:hover {
@@ -311,6 +311,7 @@ section {
 .fa-brands {
     color: #5ce128;
 }
+
 
 @media screen and (max-width: 540px) {
 

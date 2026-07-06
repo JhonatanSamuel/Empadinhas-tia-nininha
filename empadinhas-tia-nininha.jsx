@@ -63,20 +63,20 @@ export default function EmpadinhasTiaNininha() {
         .etn-nav {
           position: sticky; top: 0; z-index: 40;
           display: flex; align-items: center; justify-content: space-between;
-          padding: 14px 28px;
+          padding: 10px 20px;
           background: linear-gradient(180deg, var(--crust), var(--crust-deep));
           box-shadow: 0 2px 12px rgba(44,27,16,0.15);
         }
         .etn-logo { display:flex; align-items:center; }
         .etn-logo-img {
-          height: 52px; width: auto;
+          height: 48px; width: auto;
           filter: drop-shadow(0 2px 4px rgba(44,27,16,0.2));
         }
-        .etn-navlinks { display:flex; gap:6px; }
+        .etn-navlinks { display:flex; gap:4px; }
         .etn-navlinks button {
           background:none; border:none; cursor:pointer;
-          font-family:'Manrope',sans-serif; font-weight:700; font-size:15px;
-          color: var(--ink); padding: 8px 14px; border-radius: 999px;
+          font-family:'Manrope',sans-serif; font-weight:700; font-size:14px;
+          color: var(--ink); padding: 8px 12px; border-radius: 999px;
           transition: background 0.2s ease;
         }
         .etn-navlinks button:hover { background: rgba(44,27,16,0.1); }
@@ -85,21 +85,28 @@ export default function EmpadinhasTiaNininha() {
           position:absolute; top:100%; left:0; right:0;
           background: var(--crust-deep); padding: 10px 16px 18px;
           display:flex; flex-direction:column; gap:4px;
+          box-shadow: 0 6px 16px rgba(44,27,16,0.2);
         }
         .etn-mobile-menu button {
           background:none; border:none; text-align:left; color: var(--parchment);
-          font-family:'Manrope',sans-serif; font-weight:700; font-size:16px; padding:10px 6px; cursor:pointer;
+          font-family:'Manrope',sans-serif; font-weight:700; font-size:16px; padding:12px 6px; cursor:pointer;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
         }
+        .etn-mobile-menu button:last-child { border-bottom: none; }
 
         @media (max-width: 760px) {
           .etn-navlinks { display:none; }
           .etn-burger { display:block; }
         }
+        @media (max-width: 400px) {
+          .etn-logo-img { height: 38px; }
+          .etn-nav { padding: 8px 14px; }
+        }
 
         /* HERO */
         .etn-hero {
           position: relative;
-          padding: 90px 28px 120px;
+          padding: 72px 28px 100px;
           background:
             radial-gradient(circle at 15% 20%, rgba(255,255,255,0.18), transparent 40%),
             linear-gradient(160deg, var(--crust) 0%, var(--crust-deep) 55%, var(--kraft) 130%);
@@ -115,10 +122,6 @@ export default function EmpadinhasTiaNininha() {
           width: 180px;
           filter: drop-shadow(0 8px 24px rgba(44,27,16,0.3));
         }
-        @media (max-width: 720px) {
-          .etn-hero-inner { flex-direction: column; text-align: center; }
-          .etn-hero-logo { width: 130px; }
-        }
         .etn-eyebrow {
           font-family: 'Space Mono', monospace; text-transform: uppercase;
           letter-spacing: 0.14em; font-size: 12px; font-weight:700;
@@ -126,82 +129,98 @@ export default function EmpadinhasTiaNininha() {
           display:inline-block; padding: 6px 12px; border-radius: 999px; margin-bottom: 20px;
         }
         .etn-hero h1 {
-          font-size: clamp(2.1rem, 5.2vw, 3.6rem);
-          font-weight: 800; line-height: 1.06; letter-spacing: -0.01em;
-          margin: 0 0 22px; max-width: 780px;
+          font-size: clamp(1.7rem, 5vw, 3.6rem);
+          font-weight: 800; line-height: 1.1; letter-spacing: -0.01em;
+          margin: 0 0 18px;
         }
         .etn-hero h1 em { font-style: italic; color: var(--kraft); }
         .etn-hero p {
-          font-size: 17px; line-height: 1.6; max-width: 560px; margin: 0 0 30px; color: #3a271a;
+          font-size: 16px; line-height: 1.6; margin: 0 0 28px; color: #3a271a;
         }
         .etn-cta {
           display:inline-flex; align-items:center; gap:10px;
           background: var(--ink); color: var(--parchment);
           font-weight: 700; font-size: 15px;
-          padding: 15px 26px; border-radius: 10px; text-decoration:none;
+          padding: 14px 24px; border-radius: 10px; text-decoration:none;
           box-shadow: 0 8px 20px rgba(44,27,16,0.35);
           transition: transform 0.15s ease;
           border: none; cursor: pointer;
         }
         .etn-cta:hover { transform: translateY(-2px); }
 
-        /* pastries decoration in hero */
-        .etn-pastries { position:absolute; inset:0; z-index:1; pointer-events:none; }
-        .etn-pastry {
-          position:absolute; border-radius: 50% 50% 46% 46% / 55% 55% 45% 45%;
-          background: radial-gradient(circle at 35% 30%, #F3C572, var(--crust-deep) 75%);
-          box-shadow: inset -6px -8px 14px rgba(122,78,46,0.45), inset 4px 6px 10px rgba(255,235,190,0.5);
-        }
-
         /* stamp signature */
         .etn-stamp {
-          position: absolute; right: 6%; bottom: -34px; z-index: 3;
-          width: 132px; height: 132px; border-radius: 50%;
+          position: absolute; right: 4%; bottom: -34px; z-index: 3;
+          width: 110px; height: 110px; border-radius: 50%;
           border: 3px dashed rgba(44,27,16,0.55);
           display:flex; align-items:center; justify-content:center; text-align:center;
           transform: rotate(-9deg);
           background: rgba(251,241,223,0.9);
-          font-family:'Space Mono', monospace; font-weight:700; font-size:11.5px;
-          letter-spacing:0.04em; color: var(--kraft); padding: 12px;
+          font-family:'Space Mono', monospace; font-weight:700; font-size:10px;
+          letter-spacing:0.04em; color: var(--kraft); padding: 10px;
           line-height: 1.35;
           box-shadow: 0 6px 16px rgba(44,27,16,0.25);
         }
 
+        @media (max-width: 720px) {
+          .etn-hero { padding: 48px 20px 80px; }
+          .etn-hero-inner { flex-direction: column-reverse; text-align: center; gap: 28px; }
+          .etn-hero-logo { width: 120px; }
+          .etn-hero p { font-size: 15px; }
+          .etn-stamp { width: 90px; height: 90px; font-size: 9px; right: 3%; bottom: -28px; }
+          .etn-cta { width: 100%; justify-content: center; }
+        }
+        @media (max-width: 400px) {
+          .etn-hero { padding: 36px 16px 70px; }
+          .etn-hero-logo { width: 100px; }
+        }
+
         /* SECTION generic */
-        .etn-section { padding: 70px 28px; }
+        .etn-section { padding: 60px 24px; }
         .etn-section-inner { max-width: 1040px; margin: 0 auto; }
         .etn-heading {
-          font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin: 0 0 34px;
+          font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin: 0 0 28px;
         }
         .etn-heading span { color: var(--crust-deep); }
 
+        @media (max-width: 480px) {
+          .etn-section { padding: 40px 16px; }
+          .etn-heading { margin: 0 0 20px; }
+        }
+
         /* SOBRE */
         .etn-sobre-card {
-          display:flex; gap: 34px; align-items:center;
+          display:flex; gap: 30px; align-items:center;
           background: linear-gradient(135deg, var(--crust-deep), #B5692A);
-          color: var(--parchment); border-radius: 18px; padding: 36px;
+          color: var(--parchment); border-radius: 18px; padding: 32px;
           box-shadow: 0 14px 30px rgba(44,27,16,0.18);
         }
-        .etn-sobre-card p { line-height:1.7; margin: 0 0 16px; font-size:15.5px; }
+        .etn-sobre-card p { line-height:1.7; margin: 0 0 14px; font-size:15px; }
         .etn-sobre-visual {
-          flex-shrink:0; width: 220px; height: 220px; border-radius: 16px;
+          flex-shrink:0; width: 200px; height: 200px; border-radius: 16px;
           overflow: hidden;
           box-shadow: 0 8px 24px rgba(44,27,16,0.25);
         }
         .etn-sobre-visual img {
           width: 100%; height: 100%;
-          object-fit: cover;
-          object-position: center;
+          object-fit: cover; object-position: center;
         }
-        @media (max-width: 640px) { .etn-sobre-card { flex-direction: column; } }
+        @media (max-width: 640px) {
+          .etn-sobre-card { flex-direction: column; align-items: center; text-align: center; padding: 24px; gap: 20px; }
+          .etn-sobre-visual { width: 100%; height: 200px; }
+        }
+        @media (max-width: 400px) {
+          .etn-sobre-card { padding: 18px; border-radius: 14px; }
+          .etn-sobre-visual { height: 160px; }
+        }
 
         /* MENU */
         .etn-menu-bg { background: var(--parchment-2); }
         .etn-menu-grid {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
         }
-        @media (max-width: 900px) { .etn-menu-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 560px) { .etn-menu-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .etn-menu-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+        @media (max-width: 500px) { .etn-menu-grid { grid-template-columns: 1fr; gap: 14px; } }
 
         .etn-ticket {
           background: var(--parchment);
@@ -212,22 +231,22 @@ export default function EmpadinhasTiaNininha() {
           overflow: hidden;
         }
         .etn-ticket-img {
-          width: 100%; height: 200px;
+          width: 100%; height: 180px;
           object-fit: contain;
           background: #f7ede0;
           display: block;
           padding: 8px;
           box-sizing: border-box;
         }
-        .etn-ticket-top { padding: 16px 20px 14px; }
+        .etn-ticket-top { padding: 14px 16px 12px; }
         .etn-dot {
           width: 10px; height:10px; border-radius:50%; display:inline-block; margin-right:8px;
         }
         .etn-dot.gold { background: var(--crust-deep); }
         .etn-dot.green { background: var(--green); }
         .etn-dot.coral { background: var(--coral); }
-        .etn-ticket-name { font-weight: 700; font-size: 16px; margin: 6px 0 4px; }
-        .etn-ticket-note { font-size: 13px; opacity: 0.65; margin: 0; }
+        .etn-ticket-name { font-weight: 700; font-size: 15px; margin: 6px 0 4px; }
+        .etn-ticket-note { font-size: 12px; opacity: 0.65; margin: 0; }
         .etn-perforation {
           border-top: 2px dashed rgba(122,78,46,0.35);
           position: relative;
@@ -239,60 +258,70 @@ export default function EmpadinhasTiaNininha() {
         .etn-perforation::before { left:-9px; }
         .etn-perforation::after { right:-9px; }
         .etn-ticket-price {
-          padding: 14px 20px 18px; font-family:'Space Mono', monospace;
-          font-weight:700; font-size: 19px; color: var(--kraft);
+          padding: 12px 16px 16px; font-family:'Space Mono', monospace;
+          font-weight:700; font-size: 18px; color: var(--kraft);
         }
 
         /* ENCOMENDAS */
         .etn-order-card {
-          display:flex; gap:34px; align-items:center;
+          display:flex; gap:30px; align-items:center;
           background: var(--ink); color: var(--parchment);
-          border-radius: 18px; padding: 40px;
+          border-radius: 18px; padding: 36px;
           box-shadow: 0 14px 30px rgba(44,27,16,0.2);
         }
         .etn-order-visual {
-          flex-shrink:0; width: 220px; height: 220px; border-radius: 14px;
+          flex-shrink:0; width: 200px; height: 200px; border-radius: 14px;
           overflow: hidden;
           box-shadow: 0 8px 24px rgba(0,0,0,0.3);
         }
         .etn-order-visual img {
           width: 100%; height: 100%;
-          object-fit: cover;
-          object-position: center;
+          object-fit: cover; object-position: center;
         }
-        .etn-order-card h3 { font-size: 20px; margin: 0 0 8px; }
-        .etn-order-price { font-family:'Space Mono', monospace; font-size: 26px; font-weight:700; color: var(--crust); margin: 6px 0 22px; }
-        .etn-cta-light {
-          background: var(--parchment); color: var(--ink);
+        .etn-order-card h3 { font-size: 19px; margin: 0 0 8px; }
+        .etn-order-price { font-family:'Space Mono', monospace; font-size: clamp(18px, 4vw, 26px); font-weight:700; color: var(--crust); margin: 6px 0 22px; }
+        .etn-cta-light { background: var(--parchment); color: var(--ink); }
+        @media (max-width: 640px) {
+          .etn-order-card { flex-direction: column; align-items: center; text-align:center; padding: 24px; gap: 20px; }
+          .etn-order-visual { width: 100%; height: 200px; }
+          .etn-cta-light { width: 100%; justify-content: center; }
         }
-        @media (max-width: 640px) { .etn-order-card { flex-direction: column; text-align:center; } }
+        @media (max-width: 400px) {
+          .etn-order-card { padding: 18px; border-radius: 14px; }
+          .etn-order-visual { height: 160px; }
+        }
 
         /* CONTATOS */
         .etn-contact-card {
           background: linear-gradient(160deg, var(--crust-deep), var(--kraft));
-          color: var(--parchment); border-radius: 18px; padding: 46px 30px;
+          color: var(--parchment); border-radius: 18px; padding: 40px 24px;
           text-align: center;
         }
         .etn-contact-badge {
-          width: 110px; height: auto; margin: 0 auto 16px;
+          width: 100px; height: auto; margin: 0 auto 16px;
           filter: drop-shadow(0 4px 10px rgba(44,27,16,0.25));
         }
-        .etn-contact-title { font-size: 22px; font-weight: 800; margin: 0 0 4px; }
-        .etn-contact-sub { opacity: 0.85; font-size: 14px; margin: 0 0 30px; }
-        .etn-contact-buttons { display:flex; gap: 18px; justify-content:center; flex-wrap:wrap; }
+        .etn-contact-title { font-size: 20px; font-weight: 800; margin: 0 0 4px; }
+        .etn-contact-sub { opacity: 0.85; font-size: 14px; margin: 0 0 28px; }
+        .etn-contact-buttons { display:flex; gap: 14px; justify-content:center; flex-wrap:wrap; }
         .etn-contact-btn {
           display:flex; flex-direction:column; align-items:center; gap:8px;
           background: rgba(251,241,223,0.14); border: 1px solid rgba(251,241,223,0.4);
-          padding: 18px 26px; border-radius: 14px; text-decoration:none; color: var(--parchment);
+          padding: 16px 24px; border-radius: 14px; text-decoration:none; color: var(--parchment);
           font-weight: 700; font-size: 14px; min-width: 130px;
           transition: background 0.2s ease;
         }
         .etn-contact-btn:hover { background: rgba(251,241,223,0.26); }
-        .etn-contact-note { margin-top: 22px; font-size: 12.5px; opacity:0.7; display:flex; align-items:center; justify-content:center; gap:6px; }
+        .etn-contact-note { margin-top: 20px; font-size: 12px; opacity:0.7; display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap: wrap; text-align: center; }
+        @media (max-width: 480px) {
+          .etn-contact-card { padding: 30px 16px; border-radius: 14px; }
+          .etn-contact-buttons { flex-direction: column; align-items: stretch; }
+          .etn-contact-btn { flex-direction: row; justify-content: center; min-width: unset; }
+        }
 
         /* FOOTER */
         .etn-footer {
-          text-align:center; padding: 26px 20px; font-size: 12.5px;
+          text-align:center; padding: 22px 16px; font-size: 12px;
           color: rgba(44,27,16,0.55); background: var(--parchment-2);
         }
       `}</style>

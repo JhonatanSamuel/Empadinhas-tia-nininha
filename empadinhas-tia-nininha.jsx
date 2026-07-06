@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { Phone, MessageCircle, Menu as MenuIcon, X, MapPin } from "lucide-react";
 
 const MENU = [
-  { name: "Empadinha de Frango", note: "Bandeja com 10", price: "R$ 15,00", tone: "gold", image: "/empada-frango.png" },
-  { name: "Empadinha de Frango com Catupiry", note: "Bandeja com 10", price: "R$ 17,00", tone: "gold", image: "/frango-catupiry.jpg" },
+  { name: "Empadinha de Frango", note: "Bandeja com 10", price: "R$ 15,00", tone: "green", image: "/empada-frango.png" },
+  { name: "Empadinha de Frango com Catupiry", note: "Bandeja com 10", price: "R$ 17,00", tone: "green", image: "/frango-catupiry.jpg" },
   { name: "Empadinha de Frango com Palmito", note: "Bandeja com 10", price: "R$ 20,00", tone: "green", image: "/frrango-palmito.webp" },
-  { name: "Empadinha de Frango com Cheddar", note: "Bandeja com 10", price: "R$ 17,00", tone: "gold", image: "/frango-cheddar.webp" },
+  { name: "Empadinha de Frango com Cheddar", note: "Bandeja com 10", price: "R$ 17,00", tone: "green", image: "/frango-cheddar.webp" },
   { name: "Empadinha de Alho-Poró", note: "Bandeja com 10", price: "R$ 17,00", tone: "green", image: "/alho-poro-bacon.jpg" },
   { name: "Empadinha de Alho-Poró com Bacon", note: "Bandeja com 10", price: "R$ 20,00", tone: "green", image: "/alho-poro-bacon-2.jpg" },
-  { name: "Empadinha de Camarão", note: "Bandeja com 10", price: "R$ 25,00", tone: "coral", image: "/camarão.jpg" },
-  { name: "Empadinha Mista", note: "Bandeja com 10", price: "A Combinar", tone: "gold", image: "/mista.jpg" },
-  { name: "Coxinha Sem Massa", note: "Apenas por Encomenda", price: "A Combinar", tone: "coral", image: "/coxinha.jpeg" },
+  { name: "Empadinha de Camarão", note: "Bandeja com 10", price: "R$ 25,00", tone: "green", image: "/camarão.jpg" },
+  { name: "Empadinha Mista", note: "Bandeja com 10", price: "A Combinar", tone: "green", image: "/mista.jpg" },
+  { name: "Coxinha Sem Massa", note: "Apenas por Encomenda", price: "A Combinar", tone: "green", image: "/coxinha.jpeg" },
 ];
 
 const NAV = [

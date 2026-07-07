@@ -3,13 +3,13 @@ import { Phone, MessageCircle, Menu as MenuIcon, X, MapPin } from "lucide-react"
 
 const MENU = [
   { name: "Empadinha de Frango", note: "Bandeja com 10 empadinhas", price: "R$ 17,00", tone: "green", image: "/empada-frango.png" },
-  { name: "Empadinha de Frango com Azeitona", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/empada-frango.png" },
+  { name: "Empadinha de Frango com Azeitona", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/frango-azeitona.jpg" },
   { name: "Empadinha de Frango com Catupiry", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/frango-catupiry.jpg" },
   { name: "Empadinha de Frango com Cheddar", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/frango-cheddar.webp" },
   { name: "Empadinha de Frango com Palmito", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/frrango-palmito.webp" },
   { name: "Empadinha de Alho-Poró", note: "Bandeja com 10 empadinhas", price: "R$ 17,00", tone: "green", image: "/alho-poro-bacon.jpg" },
   { name: "Empadinha de Alho-Poró com Bacon", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/alho-poro-bacon-2.jpg" },
-  { name: "Empadinha de Milho com Bacon", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/alho-poro-bacon.jpg" },
+  { name: "Empadinha de Milho com Bacon", note: "Bandeja com 10 empadinhas", price: "R$ 20,00", tone: "green", image: "/milho-bacon.jpg" },
 ];
 
 const NAV = [

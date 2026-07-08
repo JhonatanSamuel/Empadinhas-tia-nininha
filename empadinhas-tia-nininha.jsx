@@ -434,7 +434,7 @@ export default function EmpadinhasTiaNininha() {
             </div>
             <div>
               <h3>Fazemos também empadinhas por encomenda!</h3>
-              <div className="etn-order-price">1 cento por R$ 80,00</div>
+              <div className="etn-order-price">1 cento por R$ 100,00</div>
               <a
                 className="etn-cta etn-cta-light"
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de fazer uma encomenda de empadinhas 🥧")}`}
